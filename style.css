@@ -1,130 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    background: #f7f7f7;
-    font-family: 'Roboto', sans-serif;
-}
-
-nav {
-    background-color: #240b36;
-    color: #f7f7f7;
+nav{
+    background-color: rgb(37, 9, 37);
+    color: hsl(235,24%,11%);
     height: 65px;
     font-size: 27px;
     display: flex;
     align-items: center;
     padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
-nav ul {
+nav ul{
     list-style-type: none;
 }
 
-.gameContainer { 
+.gameContainer{ 
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin-top: 50px;
 }
 
-.container {
+.container{
     display: grid;
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
-.box {
-    border: 2px solid #240b36;
+.box{
+    border: 2px solid black;
     font-size: 8vw;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    transition: background-color 0.3s;
 }
 
-.box:hover {
-    background-color: #e0cfe0;
+.box:hover{
+    background-color: rgb(242, 234, 250);
 }
 
 .info {
     font-size: 22px;
 }
 
-.gameInfo {
-    margin-top: 20px;
+.gameInfo{
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
-    text-align: center;
 }
 
-.gameInfo h1 {
+.gameInfo h1{
     font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 
-.imgbox img {
+.imgbox img{
     width: 0;
     transition: width 1s ease-in-out;
 }
 
-.br-0 {
+.br-0{
     border-right: 0;
 }
 
-.bl-0 {
+.bl-0{
     border-left: 0;
 }
 
-.bt-0 {
+.bt-0{
     border-top: 0;
 }
 
-.bb-0 {
+.bb-0{
     border-bottom: 0;
 }
 
 #reset {
     margin: 0 23px;
-    padding: 5px 20px;
-    background: #e0cfe0;
+    padding: 1px 18px;
+    background: #f3e7f9;
     border-radius: 6px;
     cursor: pointer;
     font-family: 'Baloo Bhaina 2';
     font-size: 15px;
     font-weight: bolder;
-    border: none;
-    transition: background 0.3s;
 }
 
-#reset:hover {
-    background: #cfa3cf;
-}
-
-.line {
-    background-color: #911d91;
+.line{
+    background-color: black;
     height: 3px;
     width: 0;
     position: absolute;
+    background-color: #911d91;
     transition: width 1s ease-in-out;
 }
 
-@media screen and (max-width: 950px) {
-    .gameContainer {
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
         flex-wrap: wrap;
     }
-    .gameInfo {
+    .gameInfo{
         margin-top: 34px;
     }
-    .gameInfo h1 {
+    .gameInfo h1{
         font-size: 1.5rem;
     }
     .container { 
